@@ -17,7 +17,7 @@ jobs:
 
       - name: Extract version from tag
         id: version
-        run: echo "VERSION=${GITHUB_REF#refs/tags/v}" >> $GITHUB_OUTPUT
+        run: echo "version=${GITHUB_REF#refs/tags/v}" >> "$GITHUB_OUTPUT"
 
       - name: Restore
         run: dotnet restore
@@ -26,7 +26,7 @@ jobs:
         run: dotnet build -c Release --no-restore
 
       - name: Pack
-        run: dotnet pack -c Release --no-build --no-restore -o ./nupkg -p:Version=0.0.0-ci.${{ github.run_number }}
+        run: dotnet pack -c Release --no-build -o ./nupkg -p:Version=${{ steps.version.outputs.version }}
 
       - name: Upload packages
         uses: actions/upload-artifact@v7
