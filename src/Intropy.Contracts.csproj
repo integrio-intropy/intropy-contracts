@@ -1,0 +1,7 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Contracts and interfaces for Intropy platform services.</Description>
+  </PropertyGroup>
+
+</Project>

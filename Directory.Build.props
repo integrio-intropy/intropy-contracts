@@ -1,0 +1,21 @@
+<Project>
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+
+    <Authors>Integrio</Authors>
+    <Company>Integrio</Company>
+    <License>MIT</License>
+    <Copyright>Copyright (c) 2026 Integrio</Copyright>
+    <PackageProjectUrl>https://github.com/integrio-intropy/intropy-contracts</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/integrio-intropy/intropy-contracts</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>intropy</PackageTags>
+
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <DebugType>embedded</DebugType>
+  </PropertyGroup>
+</Project>
